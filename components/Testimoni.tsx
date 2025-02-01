@@ -28,8 +28,11 @@ export default function Testimoni() {
                 <div className="mt-8 grid gap-6 md:grid-cols-3">
                     {testimonials.map((testimonial, index) => (
                         <Card key={index} className="rounded-lg bg-white p-6 shadow-md">
-                            <img src={testimonial.image} alt={testimonial.name} className="mx-auto mb-4 size-16 rounded-full" />
-                            <p className="italic text-white">"{testimonial.text}"</p>
+                            <img src={testimonial.image}
+                                alt={testimonial.name}
+                                className="mx-auto mb-4 size-16 rounded-full">
+                            </img>
+                            <p className="italic text-white">{testimonial.text}</p>
                             <h3 className="mt-4 font-semibold text-white">{testimonial.name}</h3>
                         </Card>
                     ))}
