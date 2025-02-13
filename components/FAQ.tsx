@@ -2,12 +2,12 @@ import React from "react";
 
 const FAQ = () => {
     return (
-        <section className="bg-gray-100 py-12" id="faq">
+        <section className="bg-gray-100 py-12 dark:bg-gray-900" id="faq">
             <div className="mx-auto max-w-5xl px-6">
-                <h2 className="mb-6 text-center text-3xl font-bold text-gray-900">FAQ (Pertanyaan yang Sering Diajukan)</h2>
+                <h2 className="mb-6 text-center text-3xl font-bold text-gray-900 dark:text-white">FAQ (Pertanyaan yang Sering Diajukan)</h2>
                 <div className="space-y-4">
                     {faqData.map((item, index) => (
-                        <details key={index} className="rounded-lg bg-white p-4 shadow-md">
+                        <details key={index} className="rounded-lg bg-white p-4 text-black shadow-md">
                             <summary className="cursor-pointer font-semibold">{item.question}</summary>
                             <p className="mt-2 text-gray-700">{item.answer}</p>
                         </details>
@@ -20,11 +20,11 @@ const FAQ = () => {
 
 const CTA = () => {
     return (
-        <section className="mb-12 bg-gradient-to-r from-blue-700 to-blue-500 py-16 text-center text-white" id="cta">
-            <div className="mx-auto max-w-4xl px-6">
+        <section className="mb-0 bg-gradient-to-r from-blue-700 to-blue-500 py-16 text-center text-white dark:bg-gradient-to-r  dark:from-orange-400 dark:to-blue-900" id="cta">
+            <div id="daftar" className="mx-auto max-w-4xl px-6">
                 <h2 className="mb-4 text-4xl font-bold">Gabung Sekarang & Tunjukkan Fotografi Kereta Terbaikmu!</h2>
                 <p className="mb-6 text-lg">Jangan lewatkan kesempatan untuk menjadi pemenang minggu ini.</p>
-                <a href="#register" className="rounded-lg bg-white px-6 py-3 font-semibold text-blue-700 shadow-md transition-all hover:bg-gray-200">
+                <a href="/login" className="rounded-lg bg-white px-6 py-3 font-semibold text-blue-700 shadow-md transition-all hover:bg-gray-200 dark:bg-gray-900">
                     Daftar Sekarang
                 </a>
             </div>

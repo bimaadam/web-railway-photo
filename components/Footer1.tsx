@@ -11,9 +11,9 @@ export function Footer1() {
                 <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
                     <div>
                         <Footer.Brand
-                            href="https://flowbite.com"
-                            src="https://flowbite.com/docs/images/logo.svg"
-                            alt="Flowbite Logo"
+                            href="https://github.com/bimaadam"
+                            src=""
+                            alt="Railway Logo"
                             name="Railway Photograph"
                         />
                     </div>

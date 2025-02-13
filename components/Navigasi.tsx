@@ -5,7 +5,7 @@ import { Avatar, DarkThemeToggle, Dropdown, Navbar } from "flowbite-react";
 export function Navigasi() {
     return (
         <>
-            <Navbar fluid rounded className="bg-blue-800 text-white">
+            <Navbar fluid rounded className="bg-gray-100 dark:bg-blue-950 dark:text-white">
                 <Navbar.Brand href="https://flowbite-react.com">
                     <span className="self-center whitespace-nowrap text-xl font-semibold">
                         Railway Photograph
@@ -13,19 +13,19 @@ export function Navigasi() {
                 </Navbar.Brand>
                 <div className="flex md:order-2">
                     <Dropdown
-                        arrowIcon={false}
+                        arrowIcon={true}
                         inline
                         label={
                             <Avatar
                                 alt="User settings"
-                                img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                                img=""
                                 rounded
                             />
                         }
                     >
                         <Dropdown.Header>
-                            <span className="block text-sm">Bonnie Green</span>
-                            <span className="block truncate text-sm font-medium">name@flowbite.com</span>
+                            <span className="block text-sm">User</span>
+                            <span className="block truncate text-sm font-medium">railway@gmail.com</span>
                         </Dropdown.Header>
                         <Dropdown.Item href="/Dashboard">Dashboard</Dropdown.Item>
                         <Dropdown.Item>Settings</Dropdown.Item>
@@ -36,20 +36,20 @@ export function Navigasi() {
                     <Navbar.Toggle />
                 </div>
                 <Navbar.Collapse>
-                    <Navbar.Link href="#" active className="text-white hover:text-gray-300">
+                    <Navbar.Link href="/" active className="text-black hover:text-purple-600">
                         Home
                     </Navbar.Link>
-                    <Navbar.Link href="#" className="text-white hover:text-gray-300">
+                    <Navbar.Link href="#about" className="text-black hover:text-purple-600">
                         About
                     </Navbar.Link>
-                    <Navbar.Link href="#" className="text-white hover:text-gray-300">
-                        Services
+                    <Navbar.Link href="#testimonials" className="text-black hover:text-purple-600">
+                        Testimonials
                     </Navbar.Link>
-                    <Navbar.Link href="#" className="text-white hover:text-gray-300">
-                        Pricing
+                    <Navbar.Link href="#galeri" className="text-black hover:text-purple-600">
+                        Gallery
                     </Navbar.Link>
-                    <Navbar.Link href="#" className="text-white hover:text-gray-300">
-                        Contact
+                    <Navbar.Link href="#daftar" className="text-black hover:text-purple-600">
+                        Register
                     </Navbar.Link>
                     <DarkThemeToggle className="p-0" />
                 </Navbar.Collapse>
